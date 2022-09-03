@@ -1,0 +1,23 @@
+---
+- &1 !ruby/object:User
+  categories:
+  - !ruby/object:Category
+    name: new
+  login: alex
+  password: alex
+  records:
+  - !ruby/object:Record
+    user: *1
+    amount: 200.0
+    category: new
+    created_at: 2022-09-03 23:32:55.707748100 +03:00
+  - !ruby/object:Record
+    user: *1
+    amount: 200.0
+    category: new
+    created_at: 2022-09-04 00:14:56.010850600 +03:00
+  - !ruby/object:Record
+    user: *1
+    amount: 100.0
+    category: new
+    created_at: 2022-09-04 00:15:44.889863800 +03:00
