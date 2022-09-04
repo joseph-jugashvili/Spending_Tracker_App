@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class UserLogIn
   include InputHelper
 
@@ -8,7 +10,7 @@ class UserLogIn
   def log_in
     user = receieve_account
     if user.nil?
-      puts "No account"
+      puts 'No such account'
       log_in
     else
       user
@@ -16,8 +18,8 @@ class UserLogIn
   end
 
   def receieve_account
-    login = console_input("Enter your login")
-    password = console_input("Enter your password")
+    login = console_input('Enter your login')
+    password = console_input('Enter your password')
 
     @database.users.detect { |user| user.access? login, password }
   end

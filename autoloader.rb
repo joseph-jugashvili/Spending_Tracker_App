@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'yaml'
 
 require_relative 'app/helpers/input_helper'
@@ -11,4 +13,3 @@ require_relative 'app/users/user_login'
 require_relative 'app/users/user_registration'
 require_relative 'app/operations/record_operation'
 require_relative 'app/operations/statistics'
-

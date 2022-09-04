@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class UserRegistration
   include InputHelper
 
@@ -6,19 +8,14 @@ class UserRegistration
   end
 
   def registration_data
-    #loop do
-      user_data = { login: login_input, password: password_input }
-      #user_data
-    #end
+    { login: login_input, password: password_input }
   end
 
   def login_input
-    login = console_input('Enter your login')
-    login
+    console_input('Enter your login')
   end
 
   def password_input
-    password = console_input('Enter your password')
-    password
+    console_input('Enter your password')
   end
 end

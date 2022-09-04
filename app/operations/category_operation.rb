@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CategoryOperation
   include InputHelper
 
@@ -7,7 +9,7 @@ class CategoryOperation
   end
 
   def create_category_operation
-    name = console_input("Enter the name of the category")
+    name = console_input('Enter the name of the category')
     @user.add_category(Category.new(name))
     @database.update_database
   end
