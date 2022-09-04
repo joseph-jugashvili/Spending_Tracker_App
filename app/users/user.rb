@@ -14,6 +14,10 @@ class User
     @records << new_record
   end
 
+  def remove_record(record)
+    @records.delete(record)
+  end
+
   def add_category(new_category)
     @categories << new_category
   end
