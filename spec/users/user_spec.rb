@@ -9,7 +9,7 @@ RSpec.describe User do
   let(:record) {Record.new(user, FFaker::Number.number, category)}
   let(:wrong_login) {FFaker::Name.name}
   let(:wrong_password) {FFaker::Internet.password}
-  before(:each) { database.add_user(user) }
+  before { database.add_user(user) }
   context "When user is created" do 
     it "checks if user is created" do 
       expect(database.users).not_to be_empty
